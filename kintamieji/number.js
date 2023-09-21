@@ -59,3 +59,23 @@ console.log(exp4, exp5, exp6, exp7, exp8);
 
 const exp9 = 3 ** 3;
 console.log(exp9);
+
+const begalybe = Infinity;
+const minusBegalybe = -Infinity;
+
+const x = 5 / 0;
+console.log(x);
+
+const k = -5 / 0;
+console.log(k);
+
+// not-a-number = NaN
+
+const n = NaN;
+console.log(n, NaN);
+
+const liekana = 7 % 5;
+console.log(liekana);
+
+const liekana2 = 65 % 13;
+console.log(liekana2);
