@@ -87,3 +87,18 @@ const firstLetter4 = str => {
 
     return str[0];
 }
+
+const errors = {
+    notString: 'Error: first param has to be a string type.',
+    empty: 'Error: first param has to be non-empty string value.',
+};
+
+const firstLetter5 = str => typeof str !== 'string'
+    ? errors.notString
+    : str.length
+        ? str[0]
+        : errors.empty;
+
+console.log(firstLetter5(5));
+console.log(firstLetter5(''));
+console.log(firstLetter5('Labas'));
