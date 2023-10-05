@@ -34,3 +34,56 @@ const kvadratu = a => a ** 2;
 console.log(`${n1} ** 2 = ${kvadratu(n1)}`);
 console.log(`${n2} ** 2 = ${kvadratu(n2)}`);
 
+// funkcija gauna zodi ir grazina tik pirma raide
+const pirmaRaide = zodis => zodis[0];
+
+console.log(pirmaRaide(5));
+console.log(pirmaRaide(''));
+
+function firstLetter(str) {
+    if (typeof str !== 'string') {
+        return 'Error: first param has to be a string type.';
+    }
+
+    if (str.length === 0) {
+        return 'Error: first param has to be non-empty string value.';
+    }
+
+    return str[0];
+}
+
+const firstLetter2 = function (str) {
+    if (typeof str !== 'string') {
+        return 'Error: first param has to be a string type.';
+    }
+
+    if (str.length === 0) {
+        return 'Error: first param has to be non-empty string value.';
+    }
+
+    return str[0];
+}
+
+const firstLetter3 = (str) => {
+    if (typeof str !== 'string') {
+        return 'Error: first param has to be a string type.';
+    }
+
+    if (str.length === 0) {
+        return 'Error: first param has to be non-empty string value.';
+    }
+
+    return str[0];
+}
+
+const firstLetter4 = str => {
+    if (typeof str !== 'string') {
+        return 'Error: first param has to be a string type.';
+    }
+
+    if (str.length === 0) {
+        return 'Error: first param has to be non-empty string value.';
+    }
+
+    return str[0];
+}
