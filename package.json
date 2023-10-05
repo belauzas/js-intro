@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "uzd:pazymiai": "nodemon ./uzd/pazymiai.js",
         "uzd:vardas": "nodemon ./uzd/vardas.js",
         "uzd:tarpai": "nodemon ./uzd/tarpai.js",
         "method:array": "nodemon ./method/array.js",
