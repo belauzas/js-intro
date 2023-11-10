@@ -5,12 +5,13 @@ const tekstas1 = 'vasara';
 const tekstas2 = 'pavasaris';
 const tekstas3 = 'labas rytas';
 const tekstas4 = 'pipiriukai';
+const tekstas5 = 'aaabbbccddeefghijklmn';
 
 // kori raide tekste pasikartoja dazniausiai?
 
 const abc = {};
 
-for (const letter of tekstas3) {
+for (const letter of tekstas5) {
     if (abc[letter]) {
         abc[letter] += 1;
     } else {
@@ -18,14 +19,20 @@ for (const letter of tekstas3) {
     }
 }
 
-let maxLetter = '';
 let maxCount = 0;
 
 for (const letter in abc) {
     if (abc[letter] > maxCount) {
-        maxLetter = letter;
         maxCount = abc[letter];
     }
 }
 
-console.log('>>>', maxLetter, maxCount);
+const letters = [];
+
+for (const letter in abc) {
+    if (abc[letter] === maxCount) {
+        letters.push(letter);
+    }
+}
+
+console.log('>>>', letters);
