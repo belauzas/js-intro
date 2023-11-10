@@ -74,3 +74,7 @@ Never gonna tell a lie and hurt you`;
 // Rasti unikalių raidžių kiekį;
 // Rasti unikalių žodžių kiekį;
 // Rasti žodžių su apostrofu kiekį;
+
+// Papildomai: perrašyti, jog tai būtų SongAnalizer klasė
+// Turėtų parametrą: pridėti "case sensitivity" parametrą, kuris pagal nutylėjimą yra "false"
+// Turėtų parametrą: kuris pakeičia žodžių skaičiavimo tvarką ir trumpiniai traktuojami kaip pilni žodžiai, pvz.: don't = do not;
