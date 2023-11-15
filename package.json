@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "map": "nodemon ./method/map.js",
         "tekstas": "nodemon ./uzd/tekstas.js",
         "skaiciai": "nodemon ./uzd/skaiciai.js",
         "spread": "nodemon ./method/spread.js",
